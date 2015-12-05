@@ -1,0 +1,27 @@
+.logo {
+	width: 82px;
+	height: 49px;
+	margin-top: -3px;
+	display: block;
+
+	.svg-object-raketa,
+	.svg-symbol-s,
+	.svg-symbol-p,
+	.svg-symbol-c,
+	.svg-symbol-e,
+	.svg-object-fire {
+		fill: $yellow;
+		transition: all .2s;
+	}
+
+	&:hover {
+		.svg-object-raketa,
+		.svg-symbol-s,
+		.svg-symbol-p,
+		.svg-symbol-c,
+		.svg-symbol-e,
+		.svg-object-fire {
+			fill: darken($yellow, 15%);		
+		}
+	}
+}

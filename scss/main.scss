@@ -1,0 +1,27 @@
+
+// Main 
+@import 'fonts';
+@import 'variables';
+@import 'mixins';
+
+//Vendors
+@import 'vendors/jquery.fullPage';
+
+//Components
+@import 'components/main-page';
+@import 'components/panel';
+@import 'components/logo';
+@import 'components/nav';
+@import 'components/social';
+@import 'components/portfolio-page';
+@import 'components/about-page';
+@import 'components/loading';
+	//Services-page
+	@import 'components/services-page/services-page';
+	@import 'components/services-page/services-item';
+	//Portfolio-pages
+	@import 'components/Portfolio-pages/portfolio-pages';
+	@import 'components/Portfolio-pages/portfolio-screens';
+
+
+

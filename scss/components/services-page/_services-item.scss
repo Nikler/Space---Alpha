@@ -1,0 +1,329 @@
+.services-item {
+	text-align: left;
+	padding-bottom: 60px;
+	border-bottom: 2px solid #111;
+	padding-top: 60px;
+	position: relative;
+
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	&__card {
+		float: left;
+		width: 600px;
+		@include clearfix();
+	}
+	&__title {
+		font-family: 'pf-din', sans-serif;
+		font-size: 40px;
+		font-weight: normal;
+		margin: 0 0 20px 0;
+	}
+	&__desc {
+		font-family: 'roboto', sans-serif;
+		font-size: 40px;
+		color: #747373;
+		font-size: 16px;
+		line-height: 22px;
+		margin: 0 0 25px 0;
+		text-transform: none;
+	}
+	&__list-base {
+		float: left;
+		width: 290px;
+	}
+	&__list-optional {
+		float: right;
+		width: 290px;
+	}
+//   panel-right	
+
+	&__panel-right {
+		box-sizing: border-box;
+		float: right;
+		width: 290px;
+		background-color: rgba(20,20,20,.7);
+		border-radius: 6px;
+		text-align: center;
+		padding: 25px 10px 35px;
+		position: relative;
+		overflow: hidden;
+	}
+	&__price {
+		color: #7c7c7c;
+		font-size: 18px;
+		font-family: 'pt-sans-narrow-b', sans-serif;
+
+		& strong {
+			color: #fff;
+			font-size: 50px;
+			transition: all .35s;
+
+			&.services-item__price--markup {
+				opacity: 0.65;
+			}
+		}
+	}
+
+	&__but {
+		@extend .main-page__but;
+		width: 100%;
+		margin: 25px 0 20px;
+	}
+
+	&__examples {
+		text-align: center;
+	}
+
+	&__examples-title {
+		font-family: 'pt-sans-narrow-r', sans-serif;
+		font-size: 18px;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+
+	&__example {
+		display: inline-block;
+		width: 85px;
+		height: 85px;
+		background-color: #171717;
+		border-radius: 6px;
+		margin: 0 1px;
+		transition: all .15s;
+
+		&:hover {
+			opacity: .9;
+		}
+	}
+
+}
+
+.list-base {
+	&__item {
+		font-family: 'pt-sans-narrow-r', sans-serif;
+		font-size: 16px;
+		line-height: 26px;
+
+		&:before {
+			 content: '\e807';
+			 font-family: "fontello";
+			  font-style: normal;
+			  font-weight: normal;
+			  speak: none;
+			  color: $yellow;
+			 
+			  display: inline-block;
+			  text-decoration: inherit;
+			  width: 0.8em;
+			  margin-right: 10px;
+			  text-align: left;
+			  /* opacity: .8; */
+			 
+			  /* For safety - reset parent styles, that can break glyph codes*/
+			  font-variant: normal;
+			  text-transform: none;
+			 
+			  /* fix buttons height, for twitter bootstrap */
+			  line-height: 1em;
+			 
+			  /* Animation center compensation - margins should be symmetric */
+			  /* remove if not needed */
+			  margin-left: 0;
+			 
+			  /* you can be more comfortable with increased icons size */
+			  /* font-size: 120%; */
+			 
+			  /* Font smoothing. That was taken from TWBS */
+			  -webkit-font-smoothing: antialiased;
+			  -moz-osx-font-smoothing: grayscale;
+			 
+			  /* Uncomment for 3D effect */
+			  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+		}
+	}
+}
+
+.list-optional {
+	&__item {
+		font-family: 'pt-sans-narrow-r', sans-serif;
+		font-size: 16px;
+		line-height: 26px;
+		cursor: pointer;
+		transition: all .15s;
+
+		&:hover {
+			color: #ccc;
+		}
+
+		&:hover:before {
+			color: darken($yellow, 15%);
+		}
+
+		&:before {
+			 content: '\e808';
+			 font-family: "fontello";
+			  font-style: normal;
+			  font-weight: normal;
+			  speak: none;
+			  color: $yellow;
+			  transition: all .3s;
+			 
+			  display: inline-block;
+			  text-decoration: inherit;
+			  width: 0.8em;
+			  margin-right: 10px;
+			  text-align: left;
+			  /* opacity: .8; */
+			 
+			  /* For safety - reset parent styles, that can break glyph codes*/
+			  font-variant: normal;
+			  text-transform: none;
+			 
+			  /* fix buttons height, for twitter bootstrap */
+			  line-height: 1em;
+			 
+			  /* Animation center compensation - margins should be symmetric */
+			  /* remove if not needed */
+			  margin-left: 0;
+			 
+			  /* you can be more comfortable with increased icons size */
+			  /* font-size: 120%; */
+			 
+			  /* Font smoothing. That was taken from TWBS */
+			  -webkit-font-smoothing: antialiased;
+			  -moz-osx-font-smoothing: grayscale;
+			 
+			  /* Uncomment for 3D effect */
+			  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+		}
+	}
+
+	&__item--active {
+
+		&:before {
+			content: '\e807';
+		}
+	}
+}
+
+.services-form {
+	box-sizing: border-box;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #111111;
+	border-radius: 6px;
+	padding: 20px 10px;
+	transform: translateY(-360px);
+	transition: all .3s;
+
+	&--visible {
+		transform: translateY(0);
+	}
+
+	&__close {
+		position: absolute;
+		display: block;
+	    width: 34px;
+		height: 30px;
+		text-align: center;
+		background-color: transparent;
+	    top: 60px;
+	    right: 290px;
+	    border: none;
+	    cursor: pointer;
+	    opacity: 0;
+		visibility: hidden;
+		transform: translateX(20px);
+		transition: opacity 0.3s, visibility 0s linear 0.5s, transform 0.3s;
+
+		&:focus {
+			outline: none;
+		}
+
+		&:hover span {
+			background-color: darken($yellow, 15%);
+		}
+
+	    &--visible {
+	    	opacity: 1;
+			visibility: visible;
+			transition-delay: 0s;
+			transform: translateX(0);
+	    }
+
+	    span {
+		   	width: 22px;
+			height: 3px;
+			background: $yellow;
+			transition: all 0.3s, color .1s;
+			backface-visibility: hidden;
+			border-radius: 2px;
+			position: relative;
+	  		display: block;		
+	    }
+
+	    span:first-child {
+	    	transform: rotate(45deg) translate(0px, 2px);
+	    }
+	    span:last-child {
+	    	transform: rotate(-45deg) translate(0px, -2px);
+	    }
+	}
+
+	&__input {
+		box-sizing: border-box;
+		height: 44px;
+		padding: 0 12px;
+		width: 100%;
+		line-height: 44px;
+		display: block;
+		font-family: 'pt-sans-narrow-r', sans-serif;
+		font-size: 16px;
+		background-color: #090909;
+		border: none;
+		border-radius: 6px;
+		text-transform: uppercase;
+		color: #fff;
+		margin-bottom: 12px;
+
+		&::-webkit-input-placeholder {color: #fff};
+		&::-moz-placeholder          {color: #fff};
+		&:-moz-placeholder           {color: #fff};
+		&:-ms-input-placeholder      {color: #fff};
+
+		&:focus {
+			outline: none;
+			background-color: lighten(#090909, .4%);
+		}
+	}
+
+	&__desc {
+		text-align: left;
+		text-transform: none;
+		font-family: 'roboto', sans-serif;
+		font-size: 14px;
+		line-height: 20px;
+		padding: 10px 10px;
+
+		& a {
+			color: $yellow;
+			text-decoration: none;
+			transition: all .15s;
+
+			&:hover {
+				color: darken($yellow, 10%);
+			}
+		}
+	}
+
+	&__but {
+		@extend .main-page__but;
+		width: 100%;
+		margin: 10px 0 0;
+	}
+}

@@ -1,0 +1,96 @@
+.top-panel {
+	height: 30px;
+	padding-top: 3px;
+	width: 90%;
+	margin: 3% auto 0;
+	@include clearfix();
+
+	&-wrap {
+		width: 100%;
+		position: fixed;
+		z-index: 1000;
+	}
+
+	&__logo {
+		float: left;
+		width: 100px;
+	}
+
+	&__nav {
+		float: right;
+		max-width: 600px;
+		position: relative;
+	}
+}
+
+.bottom-panel {
+	height: 30px;
+	width: 90%;
+	margin: 0 auto 3%;
+	@include clearfix();
+
+	&-wrap {
+		width: 100%;
+		position: fixed;
+		z-index: 1000;
+		bottom: 0;
+		left: 0;
+	}
+	&-wrap--pos-absolute {
+		position: absolute;
+	}
+
+	&__price {
+		float: left;
+		max-width: 150px;
+	}
+
+	&__social {
+		float: right;
+	}
+
+	.price {
+		text-decoration: none;
+		width: 34px;
+		height: 30px;
+		background: $yellow;
+		font-size: 22px;
+		color: #0f0f0f;
+		border-radius: 6px;
+		display: block;
+		position: relative;
+
+		&:hover:before {
+			background-color: $yellow;
+			color: #000;
+		}
+
+		& i {
+			vertical-align: middle;
+			margin-left: 1px;
+		}
+
+		&:before {
+			content: "Цены";
+			text-transform: uppercase;
+			font-family: 'pt-sans-narrow-r', sans-serif;
+			color: #fff;
+			height: 28px;
+			line-height: 28px;
+			float: right;
+			border: 1px solid $yellow;
+			border-radius: 6px;
+			left: 26px;
+			padding: 0 16px 0 20px;
+			position: absolute;
+			font-size: 16px;
+			transition: all .25s;
+		}
+
+		&__icon {
+			
+			float: left;		
+		}
+	}
+}
+

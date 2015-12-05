@@ -1,0 +1,162 @@
+.portfolio-page {
+	width: 910px;
+	margin: 0 auto;
+	text-transform: uppercase;
+	color: #fff;
+	position: relative;
+	text-align: center;
+
+	&__title {
+		margin: 0;
+		font-weight: normal;
+		font-family: 'pf-din', sans-serif;
+		font-size: 60px;
+		line-height: 1;
+		background: #000;
+		padding: 0 15px;
+		display: inline-block;
+		margin-bottom: 20px;
+
+		&:before {
+			content: "";
+			width: 100%;
+			height: 0;
+			border-top: 2px solid #111;
+			position: absolute;
+			top: 30px;
+			left: 0;
+			z-index: -1;
+		}
+	}
+
+	&__but {
+		@extend .main-page__but;
+		text-align: center;
+	}
+}
+
+.portfolio {
+
+	&__list {
+		float: left;
+		width: 730px;
+		height: 312px;
+		display: block;
+
+		&:after {
+		  content: '';
+		  display: block;
+		  clear: both;
+		}
+
+	}
+
+	&__link {
+		background-color: #111;
+		width: 174px;
+		height: 150px;
+		display: block;
+		border-radius: 6px;
+		position: relative;
+		margin: 0px 8px 8px 0;
+		transition: opacity .15s;
+
+		&:hover {
+			opacity: .9;
+		}
+	}
+
+	&__panel {
+		float: right;
+		width: 180px;
+		background-color: #111;
+		height: 308px;
+		border-radius: 6px;
+
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0 0 0 30px;
+		}
+	}
+
+	&__panel-title {
+		margin-top: 20px;
+		margin-bottom: 45px;
+		text-align: center;
+		font-size: 24px;
+		font-family: 'pt-sans-narrow-r', sans-serif;
+	}
+
+	&__panel-item {
+		
+		text-align: left;
+		
+	}
+
+	&__panel-link {
+		font-size: 16px;
+		line-height: 30px;
+		font-family: 'pt-sans-narrow-r', sans-serif;
+		text-decoration: none;
+		color: #818181;
+		transition: all .25s;
+
+		&:hover {
+			color: #bbb;
+		}
+	}
+
+	&__panel-link--active {
+		color: #fff;
+
+		&:hover {
+			color: #fff;
+		}
+
+		&:before {
+			 content: '\e806';
+			 font-family: "fontello";
+			  font-style: normal;
+			  font-weight: normal;
+			  speak: none;
+			  color: $yellow;
+			 
+			  display: inline-block;
+			  text-decoration: inherit;
+			  width: 0.8em;
+			  margin-right: 0;
+			  text-align: left;
+			  /* opacity: .8; */
+			 
+			  /* For safety - reset parent styles, that can break glyph codes*/
+			  font-variant: normal;
+			  text-transform: none;
+			 
+			  /* fix buttons height, for twitter bootstrap */
+			  line-height: 1em;
+			 
+			  /* Animation center compensation - margins should be symmetric */
+			  /* remove if not needed */
+			  margin-left: 0;
+			 
+			  /* you can be more comfortable with increased icons size */
+			  /* font-size: 120%; */
+			 
+			  /* Font smoothing. That was taken from TWBS */
+			  -webkit-font-smoothing: antialiased;
+			  -moz-osx-font-smoothing: grayscale;
+			 
+			  /* Uncomment for 3D effect */
+			  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+		}
+	}
+}
+
+//portfolio-icons
+
+#scissorss {
+	background: url('../img/scissorss.png') no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+}
