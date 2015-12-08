@@ -53,6 +53,52 @@
 		width: 420px;
 		margin: 0 auto;
 	}
+
+	@media only screen and (max-width: 981px) {
+		padding: 5% 0;
+		width: 80%;
+
+		&__title {
+			font-size: 70px;
+			margin-bottom: 20px;
+
+			&:before {
+				display: none;
+			}
+		}
+
+		&__text {
+			width: 100%;
+			font-size: 17px;
+			line-height: 24px;
+		}
+	}
+
+	@media only screen and (max-width: 600px) {
+		&__title {
+			font-size: 50px;
+			margin-bottom: 20px;
+		}
+
+		&__we {
+			width: 100%;
+		}
+	}
+
+	@media only screen and (max-width: 400px) {
+		padding: 15% 0 10%;
+
+		&__title {
+			font-size: 40px;
+			margin-bottom: 20px;
+		}
+
+		&__text {
+			width: 100%;
+			font-size: 16px;
+			line-height: 24px;
+		}
+	}
 }
 
 %we__item {
@@ -106,7 +152,22 @@
 	}
 	&__name {
 		@extend %we__item-name;
+		margin-bottom: 20px;
 	}	
+
+	@media only screen and (max-width: 600px) {
+		float: left;
+		width: 50%;
+		text-align: center;
+		margin: 0;
+		&__ava {
+			display: inline-block;
+		}
+	}
+
+	@media only screen and (max-width: 400px) {
+		width: 100%;
+	}
 
 }
 .chaban {
@@ -123,4 +184,18 @@
 	&__name {
 		@extend %we__item-name;
 	}	
+
+	@media only screen and (max-width: 600px) {
+		float: right;
+		width: 50%;
+		text-align: center;
+		margin: 0;
+		&__ava {
+			display: inline-block;
+		}
+	}
+
+	@media only screen and (max-width: 400px) {
+		width: 100%;
+	}
 }

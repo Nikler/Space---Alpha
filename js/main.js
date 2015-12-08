@@ -40,5 +40,6 @@ theToggle.onclick = function() {
    toggleClass(this, 'on');
    $(this).find(".nav__button").toggleClass("button-text--hide");
    $(".nav__list").toggleClass("nav__list--show");
+   $(".nav__menu").toggleClass("nav__menu--toggle");
    return false;
 }

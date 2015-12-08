@@ -1,6 +1,7 @@
 .social {
 	list-style: none;
 	margin: 0;
+	padding: 0;
 
 	&__item {
 		display: inline-block;
@@ -34,5 +35,9 @@
 
 	&__item:nth-child(2) i {
 		margin-left: -1px;
+	}
+
+	@media only screen and (max-width: 981px) {
+		display: none;
 	}
 }

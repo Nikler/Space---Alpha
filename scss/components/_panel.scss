@@ -1,55 +1,61 @@
-.top-panel {
+.top-logo {
+	position: fixed;
+	top: 6%;
+	left: 6%;
+	width: 100px;
+	z-index: 1000;
 	height: 30px;
-	padding-top: 3px;
-	width: 90%;
-	margin: 3% auto 0;
-	@include clearfix();
 
-	&-wrap {
-		width: 100%;
-		position: fixed;
-		z-index: 1000;
+	@media only screen and (max-width: 1350px) {
+		left: 5%;
 	}
 
-	&__logo {
-		float: left;
-		width: 100px;
-	}
-
-	&__nav {
-		float: right;
-		max-width: 600px;
-		position: relative;
+	@media only screen and (max-width:600px) {
+		top: 3%
 	}
 }
 
-.bottom-panel {
+.top-nav {
+	max-width: 600px;
+	position: fixed;
+	top: 6%;
+	right: 6%;
+	z-index: 1000;
+
+	@media only screen and (max-width: 1350px) {
+		right: 5%;
+	}
+
+	@media only screen and (max-width:600px) {
+		top: 3%
+	}
+}
+
+.bottom-price {
+	left: 6%;
+	bottom: 6%;
+	max-width: 150px;
+	z-index: 1000;
+	position: fixed;
 	height: 30px;
-	width: 90%;
-	margin: 0 auto 3%;
-	@include clearfix();
 
-	&-wrap {
-		width: 100%;
-		position: fixed;
-		z-index: 1000;
-		bottom: 0;
-		left: 0;
+	@media only screen and (max-width: 1350px) {
+		left: 5%;
 	}
-	&-wrap--pos-absolute {
-		position: absolute;
-	}
+}
 
-	&__price {
-		float: left;
-		max-width: 150px;
-	}
+.bottom-social {
+	right: 6%;
+	bottom: 6%;
+	position: fixed;
+	z-index: 1000;
 
-	&__social {
-		float: right;
+	@media only screen and (max-width: 1350px) {
+		right: 5%;
 	}
+}
 
-	.price {
+.price {
 		text-decoration: none;
 		width: 34px;
 		height: 30px;
@@ -91,6 +97,9 @@
 			
 			float: left;		
 		}
+
+		@media only screen and (max-width: 981px) {
+			display: none;
+		}
 	}
-}
 

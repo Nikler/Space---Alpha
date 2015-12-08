@@ -287,14 +287,14 @@
 		background-color: #090909;
 		border: none;
 		border-radius: 6px;
-		text-transform: uppercase;
+		text-transform: none;
 		color: #fff;
 		margin-bottom: 12px;
 
-		&::-webkit-input-placeholder {color: #fff};
-		&::-moz-placeholder          {color: #fff};
-		&:-moz-placeholder           {color: #fff};
-		&:-ms-input-placeholder      {color: #fff};
+		&::-webkit-input-placeholder {color: #fff; text-transform: uppercase;};
+		&::-moz-placeholder          {color: #fff; text-transform: uppercase;};
+		&:-moz-placeholder           {color: #fff; text-transform: uppercase;};
+		&:-ms-input-placeholder      {color: #fff; text-transform: uppercase;};
 
 		&:focus {
 			outline: none;
