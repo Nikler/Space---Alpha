@@ -181,7 +181,15 @@
 						slidesNavPosition:'top',
 						loopTop:false,
 						loopBottom:false,
-						loopHorizontal:false
+						loopHorizontal:false,
+						onLeave: function() {
+							if ($(".nav__menu").hasClass("nav__menu--toggle")) {
+								$("#toggle").toggleClass("on");
+								$("#toggle").find(".nav__button").toggleClass("button-text--hide");
+								$(".nav__list").toggleClass("nav__list--show");
+								$(".nav__menu").toggleClass("nav__menu--toggle");
+							}
+						}
 					});
 				};
 
@@ -205,6 +213,14 @@
 
 				
 				customParticleForSection0();
+
+				//Сворачивание меню при клике на ссылку
+				// $(".nav__item").click(function() {
+				// 	$("#toggle").find(".nav__button").toggleClass("button-text--hide");
+				//    $(".nav__list").toggleClass("nav__list--show");
+				//    $(".nav__menu").toggleClass("nav__menu--toggle");
+				//    return false;
+				// })
 
 
 				//isotop

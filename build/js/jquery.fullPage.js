@@ -1607,6 +1607,7 @@
             e.preventDefault();
             var index = $(this).parent().index();
             scrollPage($(SECTION_SEL).eq(index));
+            console.log("Hello");
         });
 
         /**
