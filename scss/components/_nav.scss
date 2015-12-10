@@ -137,6 +137,14 @@
 			top: 0;
 			right: 0;
 			border-radius: 6px;
+			visibility: visible;
+			overflow: auto;
+			display: none;
+		}
+
+		&__menu--toggle {
+			visibility: visible;
+			display: block;
 		}
 
 		&__list {
