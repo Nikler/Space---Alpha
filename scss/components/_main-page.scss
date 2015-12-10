@@ -142,6 +142,7 @@ body {
 
 	@media only screen and (max-width: 400px) {
 		width: 90%;
+		padding: 25% 0 20%;
 		&__title {
 			font-size: 60px;
 		}
@@ -163,6 +164,7 @@ body {
 	position: fixed;
 	z-index: 0;
 	width: 100%;
+	display: block;
 
 	@media only screen and (max-width: 600px) {
 		display: none;
