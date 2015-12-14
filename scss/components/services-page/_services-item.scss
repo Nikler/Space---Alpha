@@ -5,6 +5,10 @@
 	padding-top: 60px;
 	position: relative;
 
+	&:last-child {
+		border: none;
+	}
+
 	ul {
 		margin: 0;
 		padding: 0;
@@ -96,6 +100,31 @@
 
 		&:hover {
 			opacity: .9;
+		}
+	}
+
+	@media only screen and (max-width: 999px) {
+		width: 100%;
+		margin: 0 auto;
+		&__card {
+			width: 100%;
+			float: none;
+		}
+		&__list-optional {
+			float: left;
+		}
+		&__panel-right {
+			float: none;
+			width: auto;
+			margin-top: 30px;
+		}
+		&__but {
+			width: 265px;
+		}
+	}
+	@media only screen and (max-width: 600px) {
+		&__title {
+			font-size: 30px;
 		}
 	}
 

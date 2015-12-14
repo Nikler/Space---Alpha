@@ -169,7 +169,7 @@
 						loopHorizontal:false,
 						touchSensitivity: 2,
 						normalScrollElementTouchThreshold: 3,
-						responsiveWidth: 768,
+						responsiveWidth: 580,
 						onLeave: function() {
 							if ($(".nav__menu").hasClass("nav__menu--toggle")) {
 								$("#toggle").toggleClass("on");
@@ -186,7 +186,35 @@
 						anchors:['firstPage','secondPage','3rdPage'],
 						css3: true,
 						scrollingSpeed: 700,
-						scrollBar:true,
+						scrollBar:false,
+						scrollOverflow:false,
+						fitToSection: true,
+						navigation:true,
+						slidesNavigation:true,
+						navigationPosition:'right',
+						slidesNavPosition:'top',
+						loopTop:false,
+						loopBottom:false,
+						loopHorizontal:false,
+						touchSensitivity: 2,
+						normalScrollElementTouchThreshold: 3,
+						responsiveWidth: 580,
+						onLeave: function() {
+							if ($(".nav__menu").hasClass("nav__menu--toggle")) {
+								$("#toggle").toggleClass("on");
+								$("#toggle").find(".nav__button").toggleClass("button-text--hide");
+								$(".nav__list").toggleClass("nav__list--show");
+								$(".nav__menu").toggleClass("nav__menu--toggle");
+							}
+						}
+					});
+				};
+
+					$("#fullpage").fullpage({
+						anchors:['firstPage','secondPage','3rdPage'],
+						css3: true,
+						scrollingSpeed: 700,
+						scrollBar:false,
 						scrollOverflow:true,
 						fitToSection: true,
 						navigation:true,
@@ -195,12 +223,20 @@
 						slidesNavPosition:'top',
 						loopTop:false,
 						loopBottom:false,
-						loopHorizontal:false
+						loopHorizontal:false,
+						touchSensitivity: 2,
+						normalScrollElementTouchThreshold: 3,
+						// responsiveWidth: 580,
+						onLeave: function() {
+							if ($(".nav__menu").hasClass("nav__menu--toggle")) {
+								$("#toggle").toggleClass("on");
+								$("#toggle").find(".nav__button").toggleClass("button-text--hide");
+								$(".nav__list").toggleClass("nav__list--show");
+								$(".nav__menu").toggleClass("nav__menu--toggle");
+							}
+						}
 					});
-				};
-
-				
-				customParticleForSection0();
+					
 
 				//Сворачивание меню при клике на ссылку
 				// $(".nav__item").click(function() {

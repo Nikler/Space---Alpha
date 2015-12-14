@@ -6,6 +6,11 @@
 	z-index: 1000;
 	height: 30px;
 
+	// &--absolute {
+	// 	position: absolute;
+	// 	top: 3%;
+	// }
+
 	@media only screen and (max-width: 1350px) {
 		left: 5%;
 	}
@@ -39,6 +44,12 @@
 	position: fixed;
 	height: 30px;
 
+	&--absolute {
+		position: absolute;
+		bottom: 3%;
+		display: none;
+	}
+
 	@media only screen and (max-width: 1350px) {
 		left: 5%;
 	}
@@ -50,8 +61,33 @@
 	position: fixed;
 	z-index: 1000;
 
+	&--absolute {
+		position: absolute;
+		bottom: 2%;
+	}
+	&--center {
+		right: 50% !important;
+		transform: translateX(50%);
+		bottom: 3%;
+		display: block !important;
+
+		@media only screen and (max-width: 999px) {
+			bottom: 2%;
+		}
+		@media only screen and (max-width: 780px) {
+			bottom: 1.5%;
+		}
+		@media only screen and (max-width: 600px) {
+			bottom: 1%;
+		}
+	}
+
 	@media only screen and (max-width: 1350px) {
 		right: 5%;
+	}
+
+	@media only screen and (max-width: 981px) {
+		display: none;
 	}
 }
 
