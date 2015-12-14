@@ -359,10 +359,16 @@
 	}
 
 	@media only screen and (max-width: 999px) {
+		box-sizing: border-box;
+		padding: 20px 10%;
 		&__close {
 			top: auto;
 			bottom: 404px;
 			right: 0;
 		}
 	}
+	@media only screen and (max-width: 600px) {
+		padding: 20px 10px;
+	}
+	
 }
