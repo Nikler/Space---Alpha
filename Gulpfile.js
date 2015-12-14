@@ -26,7 +26,7 @@ gulp.task('css', function() {
 
 // image optimizated
 gulp.task('compress', function() {
-  gulp.src('img/*')
+  gulp.src('img/*.+(jpg|jpeg|png)')
   .pipe(imagemin())
   .pipe(gulp.dest('build/img'))
 });
