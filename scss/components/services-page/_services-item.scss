@@ -55,6 +55,7 @@
 		padding: 25px 10px 35px;
 		position: relative;
 		overflow: hidden;
+		height: 344px;
 	}
 	&__price {
 		color: #7c7c7c;
@@ -247,8 +248,9 @@
 	background-color: #111111;
 	border-radius: 6px;
 	padding: 20px 10px;
-	transform: translateY(-360px);
+	transform: translateY(-460px);
 	transition: all .3s;
+	height: 344px;
 
 	&--visible {
 		transform: translateY(0);
@@ -354,5 +356,13 @@
 		@extend .main-page__but;
 		width: 100%;
 		margin: 10px 0 0;
+	}
+
+	@media only screen and (max-width: 999px) {
+		&__close {
+			top: auto;
+			bottom: 404px;
+			right: 0;
+		}
 	}
 }
