@@ -125,16 +125,16 @@
 %we__item-ava--before {
 	color: #141414;
 	font-family: 'pt-sans-narrow-b', sans-serif;
-	font-size: 13px;
+	font-size: 12px;
 	display: block;
 	width: 150px;
-	height: 30px;
-	line-height: 30px;
+	height: 20px;
+	line-height: 20px;
 	text-align: center;
 	background-color: $yellow;
 	transform: rotate(-20deg);
 	position: absolute;
-	bottom: 10px;
+	bottom: 8px;
 	left: 0;
 	box-shadow: 0px 0px 5px #000;
 }
@@ -144,6 +144,8 @@
 	@extend %we__item;
 	&__ava {
 		@extend %we__item-ava;
+		background: url('../img/nick.png') no-repeat;
+		background-size: cover;
 
 		&:before {
 			content: "Дизайнер";
@@ -175,6 +177,8 @@
 	@extend %we__item;
 	&__ava {
 		@extend %we__item-ava;
+		background: url('../img/jack.png') no-repeat;
+		background-size: cover;
 
 		&:before {
 			content: "Программист";
