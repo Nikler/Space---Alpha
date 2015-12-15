@@ -72,6 +72,10 @@
 	position: fixed;
 	z-index: 1000;
 
+	&--hidden {
+		display: none;
+	}
+
 	&--absolute {
 		position: absolute;
 		bottom: 3%;
@@ -101,6 +105,11 @@
 		@media only screen and (max-width: 600px) {
 			bottom: 1%;
 		}
+	}
+	
+	&--contacts {
+		position: relative;
+		padding: 70px 0;
 	}
 
 	@media only screen and (max-width: 1350px) {
