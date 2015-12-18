@@ -43,6 +43,16 @@
 		text-transform: none;
 		vertical-align: middle;
 
+		a {
+			text-decoration: none;
+			color: #fff;
+			transition: all .2s;
+
+			&:hover {
+				color: $yellow;
+			}
+		}
+
 		span {
 			text-transform: uppercase;
 			padding-right: 5px;
