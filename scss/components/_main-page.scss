@@ -6,6 +6,11 @@ body {
 	margin: 0;
 }
 
+button:focus,
+a:focus {
+  outline: 0;
+}
+
 #section0  {
 	overflow: hidden ; 
 	text-align: center;
@@ -82,6 +87,10 @@ body {
 		line-height: 42px;
 		z-index: 100;
 		transition: all .15s;
+
+		&:active {
+			background-color: darken($yellow, 65%);
+		}
 
 		&:hover {
 			background-color: darken($yellow, 15%);

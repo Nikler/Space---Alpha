@@ -357,6 +357,15 @@
 		width: 100%;
 		margin: 10px 0 0;
 	}
+	&__but--sent {
+		background-color: lighten($yellow, 20%);
+		transition: all .3s;
+		cursor: default;
+
+		&:hover {
+			background-color: lighten($yellow, 20%);
+		}
+	}
 
 	@media only screen and (max-width: 999px) {
 		box-sizing: border-box;

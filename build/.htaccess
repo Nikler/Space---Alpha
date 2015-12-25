@@ -4,7 +4,7 @@ RewriteBase /
 
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^.]+)\.html\ HTTP
 
-RewriteRule ^([^.]+)\.html$ https://nikler.github.io/Space---Alpha/build/$1 [R=301,L]
+RewriteRule ^([^.]+)\.html$ http://whspace.ru//$1 [R=301,L]
 
 RewriteCond %{REQUEST_URI} !(\.[^./]+)$
 
